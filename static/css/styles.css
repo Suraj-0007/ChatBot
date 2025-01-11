@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Box */
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  border-bottom: 2px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px; /* Ensure chat box height is fixed */
+}
+
+/* Message Bubbles */
+.message {
+  max-width: 100%;  /* Make sure message doesn't go beyond container width */
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  display: inline-block;
+  margin: 5px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;  /* Ensure long words are broken */
+}
+
+/* User's Message */
+.user-message {
+  background-color: #4CAF50;
+  color: white;
+  align-self: flex-end;
+  border-radius: 20px 20px 0 20px;
+}
+
+/* Bot's Message */
+.bot-message {
+  background-color: #e0e0e0;
+  color: #333;
+  align-self: flex-start;
+  border-radius: 20px 20px 20px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Each point */
+.point {
+  display: inline-block;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* User Input Section */
+.message-input {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input Field */
+.user-input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.user-input:focus {
+  border-color: #4CAF50;
+}
+
+/* Send Button */
+.send-btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #45a049;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+footer a {
+  color: #4CAF50;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
